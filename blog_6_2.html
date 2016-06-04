@@ -114,8 +114,6 @@ The model scene for the demo consists of a wall, 8 trees and a house as you can 
 
 <p>Another issue related to the scene creation is that the models that we create with the new UV map have different sizes when imported to unity. This meant that we would need to scale each model accordingly. However, this affects the brush size and causes paint dots to be of different size on different models (larger paint dot on models that were scaled up more). To resolve this, we will likely do some sort of guess and check for the model size when creating the models in order to minimize the difference in paint dots between models.</p>
 
-<p>One more issue is that we were unable to get cursor synchronization to work. This is due to the fact that this issue was much harder than we thought it would be originally. The problem is mainly that each user has a different origin location and direction depending on hololens position at startup. Since we need to sync other users' cursor location and direction, and each user's origin is different, just passing the cursor location and orientation in the current world would cause the cursor to show up incorrectly on other users' sessions. To get this to work, we would likely need to devote a large amount of time and especially with all the issues with the scene creation, cursor synchronization is likely not worthwhile to be completed for the final demo.</p>
-
 <h3>Progress Pictures</h3>
 <p>Drawing faces and writing on the wall</p>
 <img src="img/week7_demo/file.jpg" style="width:704px;height:396px;">
@@ -123,11 +121,12 @@ The model scene for the demo consists of a wall, 8 trees and a house as you can 
 <img src="img/week7_demo/file2.jpg" style="width:704px;height:396px;">
 
 
-<h3>Plan for next week</h3>
-<p>Our plan for next week is to do the following things:
+<h3>List for final demo</h3>
+<p>Changes for next week
 <ul>
 <li>Create a final scene for the demo that fits within the demo space</li>
-<li>Have all the application features working</li>
+<li>Disable spatial mapping to prevent bystanders from blocking paintable objects</li>
+<li>Better menu, display which mode people are in</li>
 </ul>
 </p>
 
